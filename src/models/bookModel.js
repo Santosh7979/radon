@@ -6,10 +6,13 @@ const bookSchema = new mongoose.Schema( {
     tags: [String],
     
     isPublished: Boolean,
-    prices: {
-        indianPrice: String,
-        europePrice: String,
+    price: {
+        indianPrice: Number,
+        europePrice: Number,
     },
+    year:Number,
+    totalPages:Number,
+    stackvalue:Boolean,
     sales: {type: Number, default: 10}
 }, { timestamps: true });
 
